@@ -11,7 +11,9 @@
       "Bash(git remote *)",
       "Bash(git branch *)",
       "Bash(git push *)",
-      "Bash(gh api *)"
+      "Bash(gh api *)",
+      "WebFetch(domain:abhinav488.github.io)",
+      "Bash(curl -sI \"https://abhinav488.github.io/Ashtvinayak-Health-Care/\")"
     ]
   }
 }
