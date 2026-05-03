@@ -13,7 +13,9 @@
       "Bash(git push *)",
       "Bash(gh api *)",
       "WebFetch(domain:abhinav488.github.io)",
-      "Bash(curl -sI \"https://abhinav488.github.io/Ashtvinayak-Health-Care/\")"
+      "Bash(curl -sI \"https://abhinav488.github.io/Ashtvinayak-Health-Care/\")",
+      "WebSearch",
+      "WebFetch(domain:unsplash.com)"
     ]
   }
 }

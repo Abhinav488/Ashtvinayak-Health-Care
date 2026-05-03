@@ -259,7 +259,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #0A6EBD 0%, #085a96 50%, #2E8B57 100%);
+    background: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce6?w=1920&q=80&auto=format&fit=crop') center/cover no-repeat;
     background-size: cover;
     background-position: center;
 }
