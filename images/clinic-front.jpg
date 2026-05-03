@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB"/>
+      <stop offset="100%" style="stop-color:#E0F4FF"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f5f5f5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <!-- Ground -->
+  <rect y="700" width="1200" height="100" fill="#8B4513"/>
+  <rect y="700" width="1200" height="20" fill="#6B3513"/>
+  <!-- Main Building -->
+  <rect x="150" y="150" width="900" height="550" fill="url(#wall)" rx="10"/>
+  <rect x="150" y="150" width="900" height="50" fill="#0A6EBD"/>
+  <text x="600" y="185" text-anchor="middle" font-family="Arial" font-size="28" fill="#ffffff" font-weight="bold">Ashtvinayak Health Care</text>
+  <!-- Sign Board -->
+  <rect x="400" y="80" width="400" height="60" fill="#0A6EBD" rx="8"/>
+  <text x="600" y="122" text-anchor="middle" font-family="Arial" font-size="24" fill="#ffffff">Multi-Specialty Clinic</text>
+  <!-- Windows -->
+  <rect x="200" y="350" width="180" height="180" fill="#87CEEB" rx="8" stroke="#333" stroke-width="2"/>
+  <rect x="220" y="370" width="70" height="140" fill="#ffffff"/>
+  <rect x="290" y="370" width="70" height="140" fill="#ffffff"/>
+  <rect x="510" y="350" width="180" height="180" fill="#87CEEB" rx="8" stroke="#333" stroke-width="2"/>
+  <rect x="530" y="370" width="70" height="140" fill="#ffffff"/>
+  <rect x="600" y="370" width="70" height="140" fill="#ffffff"/>
+  <rect x="820" y="350" width="180" height="180" fill="#87CEEB" rx="8" stroke="#333" stroke-width="2"/>
+  <rect x="840" y="370" width="70" height="140" fill="#ffffff"/>
+  <rect x="910" y="370" width="70" height="140" fill="#ffffff"/>
+  <!-- Main Door -->
+  <rect x="510" y="450" width="180" height="250" fill="#0A6EBD" rx="8"/>
+  <rect x="525" y="465" width="150" height="180" fill="#ffffff" rx="4"/>
+  <circle cx="600" cy="560" r="8" fill="#0A6EBD"/>
+  <!-- Medical Cross -->
+  <rect x="566" y="550" width="28" height="56" fill="#0A6EBD"/>
+  <rect x="550" y="566" width="56" height="28" fill="#0A6EBD"/>
+  <!-- Parking Sign -->
+  <rect x="100" y="500" width="40" height="120" fill="#333"/>
+  <rect x="80" y="520" width="80" height="60" fill="#0066cc" rx="4"/>
+  <text x="120" y="555" text-anchor="middle" font-family="Arial" font-size="20" fill="#ffffff" font-weight="bold">P</text>
+  <!-- Plants -->
+  <circle cx="150" cy="680" r="30" fill="#228B22"/>
+  <circle cx="180" cy="700" r="25" fill="#32CD32"/>
+  <circle cx="1050" cy="680" r="30" fill="#228B22"/>
+  <circle cx="1080" cy="700" r="25" fill="#32CD32"/>
+</svg>

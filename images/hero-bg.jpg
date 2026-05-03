@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4f8"/>
+      <stop offset="100%" style="stop-color:#c5e3f0"/>
+    </linearGradient>
+    <linearGradient id="building" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f0f7fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <!-- Building -->
+  <rect x="560" y="180" width="800" height="700" fill="url(#building)" rx="20"/>
+  <rect x="560" y="180" width="800" height="60" fill="#0A6EBD"/>
+  <text x="960" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" fill="#0A6EBD" font-weight="bold">Ashtvinayak</text>
+  <text x="960" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" fill="#2E8B57">Health Care</text>
+  <!-- Windows -->
+  <rect x="640" y="500" width="160" height="200" fill="#87CEEB" rx="8"/>
+  <rect x="880" y="500" width="160" height="200" fill="#87CEEB" rx="8"/>
+  <rect x="1120" y="500" width="160" height="200" fill="#87CEEB" rx="8"/>
+  <!-- Door -->
+  <rect x="860" y="600" width="200" height="280" fill="#0A6EBD" rx="8"/>
+  <rect x="870" y="610" width="180" height="200" fill="#ffffff" rx="4"/>
+  <!-- Medical cross -->
+  <rect x="930" y="700" width="40" height="80" fill="#ffffff"/>
+  <rect x="910" y="720" width="80" height="40" fill="#ffffff"/>
+  <!-- Sign -->
+  <rect x="760" y="100" width="400" height="60" fill="#0A6EBD" rx="10"/>
+  <text x="960" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#ffffff">Multi-Specialty Clinic</text>
+</svg>

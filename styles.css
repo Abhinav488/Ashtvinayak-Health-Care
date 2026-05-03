@@ -321,18 +321,6 @@ button {
     animation: bounce 2s infinite;
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-}
-
 /* ========================================
    About Section
    ======================================== */
@@ -781,6 +769,239 @@ button {
         transform: translateY(0);
     }
 }
+
+/* Slide in from left */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideLeft 0.6s ease forwards;
+}
+
+@keyframes slideLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide in from right */
+.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideRight 0.6s ease forwards;
+}
+
+@keyframes slideRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Scale in */
+.scale-in {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: scaleIn 0.5s ease forwards;
+}
+
+@keyframes scaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Floating animation for hero elements */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Pulse animation for icons */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Spin animation */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Shimmer effect for loading */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Enhanced hover animations */
+.service-card:hover .service-icon {
+    animation: pulse 0.5s ease;
+}
+
+.why-card:hover .why-icon {
+    animation: pulse 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* Nav link hover animation */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--primary-blue);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+/* Button hover animations */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Card hover lift animation */
+.service-card,
+.why-card,
+.gallery-item {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-12px);
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Image hover zoom */
+.about-image .image-frame::before,
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(10, 110, 189, 0.1), rgba(46, 139, 87, 0.1));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.about-image .image-frame:hover::before,
+.gallery-item:hover::before {
+    opacity: 1;
+}
+
+/* Icon rotation on hover */
+.service-icon,
+.why-icon,
+.contact-icon {
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-icon,
+.why-card:hover .why-icon {
+    transform: rotate(10deg) scale(1.05);
+}
+
+/* FloatingWhatsApp animation */
+.floating-whatsapp {
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-whatsapp:hover {
+    animation: pulse 0.5s ease;
+}
+
+/* Scroll indicator bounce */
+.scroll-indicator {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-12px);
+    }
+    60% {
+        transform: translateY(-6px);
+    }
+}
+
+/* Text gradient animation */
+.hero-title {
+    background: linear-gradient(90deg, #ffffff, #e0f7fa, #ffffff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmerText 3s linear infinite;
+}
+
+@keyframes shimmerText {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+/* Staggered animation delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
 
 /* ========================================
    Responsive Design
